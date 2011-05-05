@@ -5,6 +5,9 @@ author: Miguel Olivares <miguel@moliware.com>
 """
 import ctypes
 
+# Load library
+unitex = ctypes.cdll.LoadLibrary('libunitex.so')
+
 class Unitex(object):
     """ Create a callable class for an operation"""
     def __getattr__(self, operation):
@@ -16,7 +19,6 @@ class UnitexOperation(object):
     def __init__(self, operation):
         """ It's allowed every operation of UnitexTool """
         self.operation = operation
-        self._unitex = ctypes.cdll.LoadLibrary('libunitex.so')
 
     def __call__(self, *params):
         """ Execute operation """
@@ -27,5 +29,5 @@ class UnitexOperation(object):
         # Build argc
         argc = ctypes.c_int(len(argv))
 
-        return self._unitex.main_UnitexTool(argc, argv)
+        return unitex.main_UnitexTool(argc, argv)
 
