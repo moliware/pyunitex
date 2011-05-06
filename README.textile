@@ -9,5 +9,5 @@ h2. Pyunitex:
 >>> import pyunitex
 >>> u = pyunitex.Unitex()
 >>> u.Convert('-s', 'UTF8', 'file_name', '-o', 'file_name_converted')
-</pre></code>
+</code></pre>
 
