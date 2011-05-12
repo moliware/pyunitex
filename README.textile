@@ -1,0 +1,13 @@
+h1. Basic usage:
+
+h2. Command line:
+
+@Convert -s UTF8 file_name -o file_name_converted@
+
+h2. Pyunitex:
+<pre><code class="python">
+>>> import pyunitex
+>>> u = pyunitex.Unitex()
+>>> u.Convert('-s', 'UTF8', 'file_name', '-o', 'file_name_converted')
+</code></pre>
+
