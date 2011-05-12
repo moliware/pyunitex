@@ -4,9 +4,11 @@ author: Miguel Olivares <miguel@moliware.com>
 
 """
 import ctypes
+import os
 
 # Load library
-unitex = ctypes.cdll.LoadLibrary('libunitex.so')
+unitex_lib = 'libunitex.so' if os.name == 'posix' else 'unitex.dll'
+unitex = ctypes.cdll.LoadLibrary(unitex_lib)
 
 class Unitex(object):
     """ Create a callable class for an operation"""
