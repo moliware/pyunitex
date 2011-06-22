@@ -1,10 +1,23 @@
-Basic usage:
-===
-Command line:
-Convert -s UTF8 file_name -o file_name_converted
+Pyunitex
+========
 
-Pyunitex:
->>> import pyunitex
->>> u = pyunitex.Unitex()
->>> u.Convert('-s', 'UTF8', 'file_name', '-o', 'file_name_converted')
+Description
+...........
 
+Minimalist Python ctypes wrapper for Unitex_.
+
+
+Basic usage
+...........
+
+Command line: ::
+
+  Convert -s UTF8 file_name -o file_name_converted
+
+Pyunitex: ::
+
+  >>> import pyunitex
+  >>> u = pyunitex.Unitex()
+  >>> u.Convert('-s', 'UTF8', 'file_name', '-o', 'file_name_converted')
+
+.. _Unitex: http://www-igm.univ-mlv.fr/~unitex/
