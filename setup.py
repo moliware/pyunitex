@@ -9,5 +9,14 @@ setup(name = 'pyunitex',
       author = pyunitex.__author__,
       author_email = pyunitex.__email__,
       url = 'https://github.com/moliware/pyunitex',
-      packages = ['pyunitex']
-      )
+      packages = ['pyunitex'],
+      classifiers = ('Development Status :: 5 - Production/Stable',
+                     'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
+                     'Natural Language :: English',
+                     'Operating System :: POSIX',
+                     'Operating System :: Microsoft',
+                     'Programming Language :: Python :: 2.5',
+                     'Programming Language :: Python :: 2.6',
+                     'Programming Language :: Python :: 2.7',
+      ),
+)
