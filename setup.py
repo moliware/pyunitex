@@ -6,7 +6,7 @@ import pyunitex
 setup(name = 'pyunitex',
       version = '0.1',
       description = 'Minimalist Python ctypes wrapper for Unitex',
-      long_description = open('README').read(),
+      long_description = open('README.rst').read(),
       author = pyunitex.__author__,
       author_email = pyunitex.__email__,
       url = 'https://github.com/moliware/pyunitex',
